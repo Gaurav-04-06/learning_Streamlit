@@ -44,3 +44,7 @@ with st.sidebar:
   input_df = pd.DataFrame(data)
 
 input_penguins = pd.concat([input_df , X] , axis = 0)
+
+# Display the input data
+st.write("User Input Features")
+st.write(input_df)
