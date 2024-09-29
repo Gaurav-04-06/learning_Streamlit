@@ -42,9 +42,10 @@ with st.sidebar:
   }
 
   input_df = pd.DataFrame(data)
-
   input_penguins = pd.concat([input_df , X] , axis = 0)
 
-# # Display the input data
-# st.write("User Input Features")
-# st.write(input_df)
+with st.expander('Input Features'):
+  st.write('**Input Penguin**')
+  input_df
+  st.write('**Combined Penguin Data**')
+  input_penguins
